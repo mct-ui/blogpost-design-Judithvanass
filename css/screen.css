@@ -61,7 +61,15 @@ html {
     color: #5C6366;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing; grayscale;
+    box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 body {
     margin: 0 auto;
@@ -245,7 +253,48 @@ a:focus {
   line-height: 16px;
 }
 
+/*
+  Components: Article
+*/
 
+.c-article_header,
+.c-article_body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article_header {
+  padding: 24px 24px 0;
+}
+
+.c-article_body {
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .c-article_header {
+    padding: 48px 48px 24px;
+  }
+  .c-article_author {
+    padding-bottom: 24px;
+  }
+  .c-article_body {
+    padding: 24px 48px;
+  }
+}
+@media (min-width: 992px) {
+  .c-article_body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-article_author {
+    width: 25%;
+    padding-right: 24px;
+  }
+  .c-article_content {
+    width: 75%;
+  }
+}
 /*
   Utilities: Spacing
   ---
