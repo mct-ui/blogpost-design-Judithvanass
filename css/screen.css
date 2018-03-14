@@ -44,11 +44,14 @@
   font-style: italic;
   src: url('.../fonts/DroidSerif-BoldItalic-webfont.woff') format("woff");
 }
+/*
 
     Elements: Page
     ---
     Default markup for page level elements
 */
+
+
 
 html {
     font-size: 16px;
@@ -170,7 +173,6 @@ figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
-    color: Grey;
 }
 
 hr {
@@ -194,6 +196,43 @@ a:hover,
 a:focus {
     color: #1ABAFF;
 }
+
+
+/*
+  Components: Type
+  ---
+  Special typography classes
+*/
+
+.c-type-meta {
+  font-size: 14px;
+  font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+  line-height: 16px;
+}
+
+/*
+  Components: Author
+*/
+
+.c-author {
+  display: flex;
+  align-items: center;
+}
+.c-author_image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.c-author_caption {
+  padding-top: 0;
+}
+
+/*
+  Utilities: Spacing
+  ---
+  Utility classes to put specific spacing values onto elements.
+*/
 
 /* Small devices (landscape phones, 576px and up) */
 
