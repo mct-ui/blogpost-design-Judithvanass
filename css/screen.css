@@ -108,7 +108,7 @@ img {
 h1 {
     font-size: 36px;
     line-height: 40px;
-    margin: 0 0 48px;
+    margin: 0 0 24px;
     font-family: "Playfair Display", serif;
 }
 
@@ -217,11 +217,13 @@ a:focus {
 .c-author {
   display: flex;
   align-items: center;
+  margin-bottom: 48px;
 }
 .c-author_image {
   width: 56px;
   height: 56px;
   border-radius: 100%;
+  margin-right: 16px;
 }
 
 .c-author_caption {
@@ -238,6 +240,13 @@ a:focus {
   font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
   line-height: 16px;
   margin-top: 4px;
+}
+
+.c-author_name {
+  font-size: 16px;
+  line-height: 16px;
+}
+
 
 /*
   Utilities: Spacing
